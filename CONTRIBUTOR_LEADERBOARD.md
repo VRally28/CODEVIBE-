@@ -17,7 +17,7 @@ Last updated: 2026-05-24
 | 1 | [@sricharan-213](https://github.com/sricharan-213) | 131 | 8 | 7 | 9 |
 | 2 | [@Aayuiiitmg](https://github.com/Aayuiiitmg) | 104 | 12 | 8 | 0 |
 | 3 | [@pranav-cholleti](https://github.com/pranav-cholleti) | 86 | 18 | 3 | 4 |
-| 4 | [@Mahi-19-design](https://github.com/Mahi-19-design) | 60 | 5 | 4 | 2 |
+| 4 | [@Mahi-19-design](https://github.com/Mahi-19-design) | 65 | 5 | 4 | 3 |
 | 5 | [@riteshpatil9686-lgtm](https://github.com/riteshpatil9686-lgtm) | 47 | 11 | 2 | 1 |
 | 6 | [@theblag](https://github.com/theblag) | 44 | 2 | 2 | 4 |
 | 7 | [@YashvardhanJani](https://github.com/YashvardhanJani) | 42 | 6 | 2 | 2 |
