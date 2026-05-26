@@ -1,9 +1,9 @@
-// src/pages/JsLesson6.jsx
+// src/pages/JsLesson5.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Compiler from '../components/Compiler';
 
-const JsLesson6 = () => {
+const JsLesson5 = () => {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
@@ -12,12 +12,12 @@ const JsLesson6 = () => {
   };
 
   const goToNextLesson = () => {
-    navigate('/JsLesson7');
+    navigate('/JsLesson6');
   };
 
   return (
     <div className="lesson">
-      <h1 className="lesson-title">Chapter 6: Operators in JavaScript</h1>
+      <h1 className="lesson-title">Chapter 5: Operators in JavaScript</h1>
 
       <div className="lesson-content">
         <p>
@@ -50,7 +50,7 @@ const JsLesson6 = () => {
 
       <Compiler
         hint="💡 Hint: Create a JavaScript program that: 1. Creates two variables a = 8 and b = 3."
-        LessonId="js-lesson-6"
+        LessonId="js-lesson-5"
         language="javascript"
         initialCode={`// Write your code below
 
@@ -65,7 +65,7 @@ true`}
 
       {isCorrect && (
         <Link
-          to="/JsLesson7"
+          to="/JsLesson6"
           style={{ marginTop: '20px', display: 'inline-block', fontWeight: 'bold' }}
           onClick={goToNextLesson}
         >
@@ -76,4 +76,4 @@ true`}
   );
 };
 
-export default JsLesson6;
+export default JsLesson5;
