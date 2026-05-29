@@ -39,11 +39,11 @@ Last updated: 2026-05-29
 | 23 | [@alenalex-009](https://github.com/alenalex-009) | 34 | 2 | 2 | 2 |
 | 24 | [@RehanAhmad25](https://github.com/RehanAhmad25) | 34 | 2 | 2 | 2 |
 | 25 | [@Siddh2024](https://github.com/Siddh2024) | 34 | 2 | 1 | 4 |
-| 26 | [@indresh404](https://github.com/indresh404) | 32 | 6 | 1 | 2 |
-| 27 | [@jagrati7305](https://github.com/jagrati7305) | 31 | 3 | 2 | 1 |
-| 28 | [@sujitha-kotyada](https://github.com/sujitha-kotyada) | 29 | 2 | 1 | 3 |
-| 29 | [@tazmeen24](https://github.com/tazmeen24) | 29 | 7 | 1 | 1 |
-| 30 | [@thedaripanator](https://github.com/thedaripanator) | 29 | 2 | 2 | 1 |
+| 26 | [@thedaripanator](https://github.com/thedaripanator) | 34 | 2 | 2 | 2 |
+| 27 | [@indresh404](https://github.com/indresh404) | 32 | 6 | 1 | 2 |
+| 28 | [@jagrati7305](https://github.com/jagrati7305) | 31 | 3 | 2 | 1 |
+| 29 | [@sujitha-kotyada](https://github.com/sujitha-kotyada) | 29 | 2 | 1 | 3 |
+| 30 | [@tazmeen24](https://github.com/tazmeen24) | 29 | 7 | 1 | 1 |
 | 31 | [@ravishankar-03](https://github.com/ravishankar-03) | 27 | 1 | 1 | 3 |
 | 32 | [@shreyamevada6](https://github.com/shreyamevada6) | 26 | 3 | 1 | 2 |
 | 33 | [@RishiMaskare](https://github.com/RishiMaskare) | 24 | 2 | 1 | 2 |
