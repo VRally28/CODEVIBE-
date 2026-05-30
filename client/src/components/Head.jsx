@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from "../AuthProvider.jsx";
 import { useSearch } from "../context/SearchContext.jsx";
-import { FaSignInAlt, FaSignOutAlt, FaUserPlus, FaTachometerAlt, FaGamepad, FaSearch, FaTimes } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt, FaUserPlus, FaTachometerAlt, FaGamepad, FaSearch, FaTimes, FaTrophy } from "react-icons/fa";
 import logo from "../assets/favicon.png";
 import StreakCounter from "./StreakCounter.jsx";
 
@@ -101,6 +101,10 @@ const clearSearch = () => {
           {user ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <StreakCounter />
+              <Link to="/leaderboard" className="nav-link">
+                <FaTrophy className="nav-icon" />
+                <span>Leaderboard</span>
+              </Link>
               <Link to="/dashboard" className="nav-link">
                 <FaTachometerAlt className="nav-icon" />
                 <span>Dashboard</span>
@@ -144,6 +148,9 @@ const clearSearch = () => {
             <div style={{ display: 'flex', justifyContent: 'center', padding: '12px 0', borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '8px' }}>
               <StreakCounter />
             </div>
+            <Link to="/leaderboard" className="nav-link" onClick={() => setMenuOpen(false)}>
+              <FaTrophy className="nav-icon" /><span>Leaderboard</span>
+            </Link>
             <Link to="/dashboard" className="nav-link" onClick={() => setMenuOpen(false)}>
               <FaTachometerAlt className="nav-icon" /><span>Dashboard</span>
             </Link>
