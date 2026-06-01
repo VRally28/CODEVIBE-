@@ -4,7 +4,7 @@ import { useAuth } from "../AuthProvider.jsx";
 import { useSearch } from "../context/SearchContext.jsx";
 import { useDebounce } from "../hooks/useDebounce"; // added
 import { FaSignInAlt, FaSignOutAlt, FaUserPlus, FaTachometerAlt, FaGamepad, FaSearch, FaTimes } from "react-icons/fa";
-import logo from "../assets/favicon.png";
+import logo from "../assets/favicon.svg";
 
 const COURSES = [
   { label: "HTML Basics", path: "/HtmlLesson" },
