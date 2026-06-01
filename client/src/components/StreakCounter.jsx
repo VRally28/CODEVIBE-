@@ -38,35 +38,67 @@ const StreakCounter = () => {
     return () => window.removeEventListener('codevibe-progress-updated', fetchStreak);
   }, [userEmail, token]);
 
-  const { streak, maxStreak, events } = streakData;
-  const isActiveToday = streak > 0; // Simplified assumption for today
+  const { events } = streakData;
 
-  // Build last 7 days visualizer
-  const dayMs = 24 * 60 * 60 * 1000;
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const last7Days = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(today.getTime() - (6 - i) * dayMs);
-    return {
-      dateKey: d.toISOString().slice(0, 10),
-      dayName: d.toLocaleDateString('en-US', { weekday: 'narrow' }),
-      isToday: i === 6
-    };
-  });
+  const toLocalDateStr = (dateObj) => {
+    const d = new Date(dateObj);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
 
   const activeDates = events.reduce((acc, event) => {
     const d = new Date(event.x || event.createdAt || event.date || "");
     if (d && !Number.isNaN(d.getTime())) {
-      acc[d.toISOString().slice(0, 10)] = true;
+      acc[toLocalDateStr(d)] = true;
     }
     return acc;
   }, {});
 
-  for (let offset = 0; offset < Math.min(streak, 7); offset += 1) {
-    const streakDate = new Date(today.getTime() - offset * dayMs);
-    activeDates[streakDate.toISOString().slice(0, 10)] = true;
+  const dayMs = 24 * 60 * 60 * 1000;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const todayStr = toLocalDateStr(today);
+  
+  const yesterday = new Date(today.getTime() - dayMs);
+  const yesterdayStr = toLocalDateStr(yesterday);
+
+  // Compute Streak Dynamically on Frontend
+  let computedStreak = 0;
+  let computedMaxStreak = streakData.maxStreak || 0;
+  
+  const uniqueDatesArray = Object.keys(activeDates).sort((a, b) => new Date(b) - new Date(a));
+  
+  if (uniqueDatesArray.length > 0) {
+    const newestDateStr = uniqueDatesArray[0];
+    if (newestDateStr === todayStr || newestDateStr === yesterdayStr) {
+      computedStreak = 1;
+      let prevDate = new Date(newestDateStr);
+      for (let i = 1; i < uniqueDatesArray.length; i++) {
+        const currDate = new Date(uniqueDatesArray[i]);
+        const expected = new Date(prevDate.getTime() - dayMs);
+        if (toLocalDateStr(currDate) === toLocalDateStr(expected)) {
+          computedStreak++;
+          prevDate = currDate;
+        } else {
+          break;
+        }
+      }
+    }
   }
+
+  computedMaxStreak = Math.max(computedStreak, computedMaxStreak);
+  const isActiveToday = activeDates[todayStr] || false;
+
+  const last7Days = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(today.getTime() - (6 - i) * dayMs);
+    return {
+      dateKey: toLocalDateStr(d),
+      dayName: d.toLocaleDateString('en-US', { weekday: 'narrow' }),
+      isToday: i === 6
+    };
+  });
 
   return (
     <div 
@@ -77,7 +109,7 @@ const StreakCounter = () => {
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: isActiveToday ? '#ff8c4d' : '#888' }}>
         <Flame size={20} fill={isActiveToday ? '#ff8c4d' : 'transparent'} />
-        <span style={{ fontWeight: 'bold', fontSize: '1rem' }}>{streak}</span>
+        <span style={{ fontWeight: 'bold', fontSize: '1rem' }}>{computedStreak}</span>
       </div>
 
       {isHovered && (
@@ -105,8 +137,8 @@ const StreakCounter = () => {
             borderTop: '1px solid rgba(255, 140, 77, 0.3)', borderLeft: '1px solid rgba(255, 140, 77, 0.3)',
           }} />
 
-          <h3 style={{ margin: '0 0 4px 0', fontSize: '1.1rem', color: '#ff8c4d' }}>{streak} Day Streak</h3>
-          <p style={{ margin: '0 0 16px 0', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)' }}>Max Streak: {maxStreak}</p>
+          <h3 style={{ margin: '0 0 4px 0', fontSize: '1.1rem', color: '#ff8c4d' }}>{computedStreak} Day Streak</h3>
+          <p style={{ margin: '0 0 16px 0', fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)' }}>Max Streak: {computedMaxStreak}</p>
           
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: '4px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '12px' }}>
             {last7Days.map(day => {
