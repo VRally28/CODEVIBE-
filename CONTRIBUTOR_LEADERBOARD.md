@@ -2,7 +2,7 @@
 
 This leaderboard is generated automatically for `JiyaBatra/CODEVIBE-` by GitHub Actions.
 
-Last updated: 2026-06-01
+Last updated: 2026-06-02
 
 ## Scoring
 
@@ -14,7 +14,7 @@ Last updated: 2026-06-01
 
 | Rank | Contributor | Score | Commits | Merged PRs | Closed Issues |
 | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | [@Pcmhacker-piro](https://github.com/Pcmhacker-piro) | 200 | 0 | 6 | 28 |
+| 1 | [@Pcmhacker-piro](https://github.com/Pcmhacker-piro) | 230 | 0 | 6 | 34 |
 | 2 | [@sricharan-213](https://github.com/sricharan-213) | 131 | 8 | 7 | 9 |
 | 3 | [@Mahi-19-design](https://github.com/Mahi-19-design) | 112 | 6 | 5 | 10 |
 | 4 | [@Dhruvil20060](https://github.com/Dhruvil20060) | 111 | 8 | 6 | 7 |
@@ -36,11 +36,11 @@ Last updated: 2026-06-01
 | 20 | [@ArshiBansal](https://github.com/ArshiBansal) | 45 | 5 | 2 | 3 |
 | 21 | [@theblag](https://github.com/theblag) | 44 | 2 | 2 | 4 |
 | 22 | [@YashvardhanJani](https://github.com/YashvardhanJani) | 42 | 6 | 2 | 2 |
-| 23 | [@sashatakpere](https://github.com/sashatakpere) | 41 | 3 | 2 | 3 |
-| 24 | [@shyam-medh](https://github.com/shyam-medh) | 41 | 13 | 1 | 1 |
-| 25 | [@advikdivekar](https://github.com/advikdivekar) | 40 | 5 | 3 | 0 |
-| 26 | [@Siddh2024](https://github.com/Siddh2024) | 39 | 2 | 1 | 5 |
-| 27 | [@NarraMounika](https://github.com/NarraMounika) | 37 | 1 | 1 | 5 |
+| 23 | [@shyam-medh](https://github.com/shyam-medh) | 41 | 13 | 1 | 1 |
+| 24 | [@advikdivekar](https://github.com/advikdivekar) | 40 | 5 | 3 | 0 |
+| 25 | [@Siddh2024](https://github.com/Siddh2024) | 39 | 2 | 1 | 5 |
+| 26 | [@NarraMounika](https://github.com/NarraMounika) | 37 | 1 | 1 | 5 |
+| 27 | [@sashatakpere](https://github.com/sashatakpere) | 36 | 3 | 2 | 2 |
 | 28 | [@suryagkp2007-cmyk](https://github.com/suryagkp2007-cmyk) | 36 | 3 | 2 | 2 |
 | 29 | [@Tech4Aditya](https://github.com/Tech4Aditya) | 36 | 3 | 2 | 2 |
 | 30 | [@shivani11jadhav](https://github.com/shivani11jadhav) | 35 | 0 | 2 | 3 |
