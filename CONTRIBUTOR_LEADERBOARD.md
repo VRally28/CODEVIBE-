@@ -19,9 +19,9 @@ Last updated: 2026-06-03
 | 3 | [@Mahi-19-design](https://github.com/Mahi-19-design) | 112 | 6 | 5 | 10 |
 | 4 | [@Dhruvil20060](https://github.com/Dhruvil20060) | 111 | 8 | 6 | 7 |
 | 5 | [@Aayuiiitmg](https://github.com/Aayuiiitmg) | 104 | 12 | 8 | 0 |
-| 6 | [@thedaripanator](https://github.com/thedaripanator) | 100 | 10 | 5 | 6 |
-| 7 | [@namrarafique93-del](https://github.com/namrarafique93-del) | 97 | 11 | 5 | 5 |
-| 8 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 89 | 7 | 5 | 5 |
+| 6 | [@Saubhagya1621](https://github.com/Saubhagya1621) | 104 | 7 | 6 | 6 |
+| 7 | [@thedaripanator](https://github.com/thedaripanator) | 100 | 10 | 5 | 6 |
+| 8 | [@namrarafique93-del](https://github.com/namrarafique93-del) | 97 | 11 | 5 | 5 |
 | 9 | [@KGFCH2](https://github.com/KGFCH2) | 87 | 1 | 1 | 15 |
 | 10 | [@pranav-cholleti](https://github.com/pranav-cholleti) | 86 | 18 | 3 | 4 |
 | 11 | [@DebasmitaBose0](https://github.com/DebasmitaBose0) | 80 | 0 | 0 | 16 |
